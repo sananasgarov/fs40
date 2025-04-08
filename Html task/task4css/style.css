@@ -75,10 +75,6 @@ li:nth-child(16){
     background-color: #00FFFF;
     color: white;
 }
-
-
-
-
 li:hover{
     cursor: pointer;
     background-color: #fff;
