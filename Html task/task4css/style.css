@@ -1,0 +1,88 @@
+section{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+}
+ol{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1px;
+    list-style-type: none;
+}
+li{
+    padding: 15px;
+    transition: all 0.5s;
+}
+li:nth-child(1){
+    background-color: black;
+    color: white;
+}
+li:nth-child(2){
+    background-color: silver;
+    color: white;
+}
+li:nth-child(3){
+    background-color: gray;
+    color: white;
+}
+li:nth-child(4){
+    background-color: #3498db;
+    color: white;
+}
+li:nth-child(5){
+    background-color: maroon;
+    color: white;
+}
+li:nth-child(6){
+    background-color: red;
+    color: white;
+}
+li:nth-child(7){
+    background-color: purple;
+    color: white;
+}
+li:nth-child(8){
+    background-color: #f0f;
+    color: white;
+}
+li:nth-child(9){
+    background-color: green;
+    color: black;
+}
+li:nth-child(10){
+    background-color: lime;
+    color: white;
+}
+li:nth-child(11){
+    background-color:   olive;
+    color: white;
+}
+li:nth-child(12){
+    background-color: yellow;
+    color: white;
+}
+li:nth-child(13){
+    background-color: navy;
+    color: white;
+}
+li:nth-child(14){
+    background-color: #0000FF;
+    color: white;
+}
+li:nth-child(15){
+    background-color:   #008080;
+    color: white;
+}
+li:nth-child(16){
+    background-color: #00FFFF;
+    color: white;
+}
+
+
+
+
+li:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color:  #000;
+}
