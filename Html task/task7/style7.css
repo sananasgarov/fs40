@@ -1,0 +1,49 @@
+body{
+    margin-inline: auto;
+    max-width: 1320px;
+    width: 50%;
+    box-sizing: border-box;
+    font-family: Roboto, monospace;
+}
+header{
+    margin: auto;
+    display: flex;
+}
+.circle{
+    border: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #833ae0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#sam{
+    width: 200px;
+    background-color: lavender;
+    padding: 5px;
+}
+button{
+    background-color: white;
+    border: none;
+    padding: 15px;
+    transition: all 0.5s;
+}
+img{
+    width: 10%;
+
+}
+input{
+    margin: 10px;
+}
+div{
+    margin: 15px;
+}
+button:hover{
+    cursor: pointer;
+    border-bottom: 2px;
+    border-color: green;
+    border-style: solid;
+}
