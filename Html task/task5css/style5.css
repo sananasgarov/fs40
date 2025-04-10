@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+}
+header{
+    height: 50px;
+    background-color: green;
+}
+main{
+    width: 70%;
+    max-width: 1000px;
+    margin: auto;
+}
+p{
+    font-size: 20px;
+}
+a{
+    font-size: 20px;
+    color: green;
+}
+h1{
+    font-size: 60px;
+    font-weight: 800;
+}
+h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+h3{
+    font-size: 20px;
+}
+footer{
+    height: 50px;
+    background-color: aqua;
+}
