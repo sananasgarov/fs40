@@ -19,6 +19,7 @@ header{
     justify-content: center;
     align-items: center;
     color: white;
+    margin-left: 200px;
 }
 #sam{
     width: 200px;
@@ -29,7 +30,15 @@ button{
     background-color: white;
     border: none;
     padding: 15px;
-    transition: all 0.5s;
+    transition: all 0.1s;
+}
+
+.right{
+    background-color: lavender;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    margin-left: 800px;
 }
 img{
     width: 10%;
@@ -43,6 +52,7 @@ div{
 }
 button:hover{
     cursor: pointer;
+    border: 0px;
     border-bottom: 2px;
     border-color: green;
     border-style: solid;
