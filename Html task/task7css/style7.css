@@ -4,6 +4,10 @@ body{
     width: 50%;
     box-sizing: border-box;
     font-family: Roboto, monospace;
+    
+}
+ul{
+    list-style-type: none;
 }
 header{
     margin: auto;
@@ -31,9 +35,6 @@ button{
     border: none;
     padding: 15px;
     transition: all 0.1s;
-}
-ul{
-    types: none;
 }
 .right{
     background-color: lavender;

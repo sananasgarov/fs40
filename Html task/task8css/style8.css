@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+
+}
+div{
+    max-width: 1000px;
+    width: 20%;
+    height: 320px;
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid #788EB2;
+    margin: 5px;
+    padding: 10px;
+    overflow: auto;
+    
+}
+.Head{
+    font-size: 18px;
+    font-weight: 600;
+}
+div:hover{
+    background-color: blue;
+    transition: 1s;
+    color: white;
+    cursor: pointer;
+}
