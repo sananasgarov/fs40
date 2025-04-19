@@ -1,0 +1,65 @@
+body{
+    margin: 8px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.cards{
+    max-width: 950px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    gap: 25px;
+}
+.card{
+    width: 290px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 0px 12px 12px 12px;
+    color: #fff;
+}
+.card:nth-child(1){
+    background-color: violet;
+}
+.card:nth-child(2){
+    background-color: green;
+}
+.card:nth-child(3){
+    background-color: blue;
+}
+.card:nth-child(4){
+    background-color: black;
+}
+.down{
+    display: flex;
+    justify-content: space-between;
+}
+.sari{
+    width: 50px;
+    padding-top: 35px;
+    margin-left: -5px;
+}
+.visa{
+    width: 100px;
+    height: 35px;
+    margin-right: 10px;
+    margin-top: -10px;
+}
+.number{
+    font-weight: 200;
+    font-size: 25px;
+    margin-top: -5px;
+}
+.name{
+    font-size: 20px;
+    margin-top: -20px;
+    font-family: monospace;
+    font-weight: bold;
+}
+.Val{
+    font-size: 9px;
+    font-family: 'Tahoma', sans-serif;
+}
+.time{
+    margin-top: -10px;
+    font-family: 'Tahoma', sans-serif;
+}

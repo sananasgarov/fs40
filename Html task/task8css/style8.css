@@ -1,28 +1,39 @@
 body{
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
-
+    font-family: 'Montserrat', sans-serif;
+    overflow: scroll;
 }
-div{
-    max-width: 1000px;
-    width: 20%;
-    height: 320px;
+p{
+    color: #A2A2A2;
+}
+h3{
+    color: #1560bd;
+}
+.Card{
+    width: 270px;
+    height: 300px;
+    border: 1px solid #788EB2 ;
     display: inline-block;
+    background-color: #FDFDFD;
+    padding: 20px;
     border-radius: 10px;
-    border: 1px solid #788EB2;
-    margin: 5px;
-    padding: 10px;
-    overflow: auto;
-    
 }
-.Head{
-    font-size: 18px;
-    font-weight: 600;
+.Cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin-top: 10px;
 }
-div:hover{
-    background-color: blue;
-    transition: 1s;
-    color: white;
+.Card:hover{
     cursor: pointer;
+    transition: all 1s;
+    background-color: blue;
+    p{
+        color: white;
+    }
+    h3{
+        color: white;
+    }
 }
