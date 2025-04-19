@@ -42,3 +42,9 @@ ul{
     font-size: 12px;
     font-style: italic;
 }
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
