@@ -5,8 +5,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  background: #f9f9f9;
+  font-family: "Poppins", Arial, sans-serif
 }
 
 header {
@@ -112,9 +111,9 @@ header {
 .icon ul li a:hover {
   color: #222;
 }
-.card:hover{
+.card:hover {
   .icon {
     opacity: 1;
     bottom: 50px;
-  }  
-} 
+  }
+}
