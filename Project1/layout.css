@@ -1,0 +1,28 @@
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flex-column{
+  flex-direction: column;
+}
+.position-relative{
+    position: relative;
+}
+.button1 {
+    padding: 10px 22px;
+    border-radius: 30px;
+    background-color: white;
+    color: inherit;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .button2 {
+    padding: 10px 22px;
+    border-radius: 30px;
+    background-color: #407BFF;
+    color: white;
+    border: 1px solid transparent;
+  }
+body::selection {
+  background: #000000;
+  color: #ffffff;
+}
