@@ -1,28 +1,60 @@
-.flex{
-    display: flex;
-    align-items: center;
+.flex {
+  display: flex;
 }
-.flex-column{
+.flex-center{
+  align-items: center;
+}
+.flex-column {
   flex-direction: column;
 }
-.position-relative{
-    position: relative;
+.position-relative {
+  position: relative;
 }
 .button1 {
-    padding: 10px 22px;
-    border-radius: 30px;
-    background-color: white;
-    color: inherit;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  .button2 {
-    padding: 10px 22px;
-    border-radius: 30px;
-    background-color: #407BFF;
-    color: white;
-    border: 1px solid transparent;
-  }
+  padding: 10px 22px;
+  border-radius: 30px;
+  background-color: white;
+  color: inherit;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.button2 {
+  padding: 10px 22px;
+  border-radius: 30px;
+  background-color: #407bff;
+  color: white;
+  border: 1px solid transparent;
+}
+.header {
+  font-size: 18px;
+  color: #000000;
+}
 body::selection {
   background: #000000;
   color: #ffffff;
+}
+.button1:hover {
+  color: #000000;
+  background: #ffffff;
+  border-color: #000000;
+  cursor: pointer;
+}
+.button2:hover{
+  cursor: pointer;
+  
+}
+.card3-body a:hover{
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-buttons>button:hover {
+  background-color: #407bff;
+  transition: 0.5s all;
 }
