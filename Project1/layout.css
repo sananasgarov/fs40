@@ -20,6 +20,11 @@ a{
   color: inherit;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+.body-left>.button1{
+  border-color: #407BFF;
+  color: #407BFF;
+  transition: 0.3s all;
+}
 .button2 {
   padding: 10px 22px;
   border-radius: 30px;
@@ -50,11 +55,16 @@ body::selection {
   border-color: #000000;
   cursor: pointer;
 }
-.button2:hover{
-  cursor: pointer;
-  
+.body-left>.button1:hover{
+  background-color: #407bff;
+  color: white;
+  border-color: inherit;
 }
-
+.button2:hover {
+  border-color: #5489ff;
+  background: #5489ff;
+  cursor: pointer;
+}
 .nav-buttons>button:hover {
   background-color: #407bff;
   transition: 0.5s all;
