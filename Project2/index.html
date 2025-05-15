@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class=" scroll-smooth">
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Imagine</title>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -22,11 +22,12 @@
         }
     </style>
     </head>
-    <body>
-        <header>
-            <div class="contanier mx-auto max-w-[1320px] w-[80%] ">
+    <body class=" selection:bg-black selection:text-white ">
+        <header class="sticky z-50 top-0  shadow-md bg-white ">
+            <div class="contanier mx-auto max-w-[1320px] w-[80%]">
                 <div
-                    class="nav-bar flex justify-between items-center p-[20px]">
+                    class="nav-bar flex justify-between items-center p-[20px]"
+                    id="navbar">
                     <div class="nav-bar-left">
                         <a href class="flex text-black text-[40px]">
                             <p>imagine</p>
@@ -36,11 +37,11 @@
                     <div class="nav-bar-right">
                         <ul
                             class="flex gap-15 text-[18px] transition-all duration-150">
-                            <li><a href="#!"
+                            <li><a href="#home-sec"
                                     class="text-blue-500 transition  duration-300 ease-in-out">Home</a></li>
-                            <li><a href="#!"
+                            <li><a href="#feat-sec"
                                     class="hover:text-blue-500 transition  duration-300 ease-in-out">Features</a></li>
-                            <li class="group relative "><a href="#!"
+                            <li class="group relative "><a href="#about-sec"
                                     class="hover:text-blue-500 pb-[5px] flex items-center gap-2 transition duration-300 ease-in-out ">About
                                     Us <i
                                         class="fas fa-chevron-down text-[10px]"></i></a>
@@ -52,7 +53,7 @@
                                             Templates</a></li>
                                     <li
                                         class="pt-[9px] pb-[9px] pl-[20px] pr-[20px] hover:bg-[#f4f5f9] text-[#25262a]"><a
-                                            href="#!">Our Team</a></li>
+                                            href="#team-sec">Our Team</a></li>
                                     <li
                                         class="pt-[9px] pb-[9px] pl-[20px] pr-[20px] hover:bg-[#f4f5f9] text-[#25262a] group"><a
                                             href="#!">More Links</a>
@@ -83,10 +84,10 @@
             </div>
         </header>
         <main>
-            <section>
+            <section id="home-sec">
                 <div class="mx-auto max-w-[1320px] w-[80%]">
                     <div
-                        class="Business grid lg:grid-cols-2 mt-[100px] gap-25px md:grid-cols-1">
+                        class="business grid lg:grid-cols-2 mt-[100px] gap-25px md:grid-cols-1">
                         <div>
                             <h1 class="text-6xl font-bold mb-[20px]">Make Your
                                 Business More Profitable</h1>
@@ -107,10 +108,11 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="feat-sec">
                 <div class="mx-auto max-w-[1320px] w-[80%]">
-                    <div class="imagine-features text-center" data-aos="fade-up"> 
-                        <div class="mb-16">
+                    <div class="imagine-features"
+                        data-aos="fade-up">
+                        <div class="mb-16 text-center">
                             <p
                                 class="text-black text-5xl mb-5 font-bold">Imagine
                                 Features</p>
@@ -122,10 +124,11 @@
                         <div>
 
                             <div
-                                class="cards gap-[25px] grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 justify-center items-center relative ">
+                                class="cards gap-[25px] grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 justify-center  items-center relative ">
 
-                                <div data-aos="fade-up" data-aos-delay="50" data-aos-one="false" data-aos-mirror="true" data-aos-duration="1200"
-                                    class="card hover:shadow-lg w-[340px] h-[230px] relative hover:top-[-10px] group transition transition-all  duration-700 ease-in-out hover:bg-sky-500 bg-[#f1f1f1]  p-[30px] mb-16 rounded-md text-center pt-[50px]">
+                                <div data-aos="fade-up" data-aos-delay="50"
+                                    data-aos-duration="1200"
+                                    class="card hover:shadow-lg w-[340px] h-[230px] relative transition-all duration-1000 ease-in-out hover:top-[-10px] group  hover:bg-sky-500 bg-[#f1f1f1]  p-[30px] mb-16 rounded-md text-center pt-[50px]">
                                     <div
                                         class="bg-blue-600 w-18 h-18 rounded-[50%] absolute text-center right-[41%] top-[-35px] z-20 group-hover:bg-white shadow-2xl"><i
                                             class="fa-solid fa-arrows-rotate absolute top-0 text-3xl text-white top-5 left-[29%] group-hover:text-sky-500"></i>
@@ -144,7 +147,8 @@
                                             More</a>
                                     </div>
                                 </div>
-                                <div data-aos="fade-up" data-aos-delay="100" data-aos-one="false" data-aos-mirror="true" data-aos-duration="1200"
+                                <div data-aos="fade-up" data-aos-delay="100"
+                                    data-aos-duration="1200"
                                     class="card w-[340px] hover:shadow-lg h-[230px] relative hover:top-[-10px] group transition transition-all  duration-700 ease-in-out hover:bg-sky-500 bg-[#f1f1f1]  p-[30px] mb-16 rounded-md text-center pt-[50px]">
                                     <div
                                         class="bg-blue-600 shadow-2xl w-18 h-18 rounded-[50%] absolute text-center right-[41%] top-[-35px] z-20 group-hover:bg-white"><i
@@ -164,7 +168,8 @@
                                             More</a>
                                     </div>
                                 </div>
-                                <div data-aos="fade-up" data-aos-delay="150" data-aos-one="false" data-aos-mirror="true" data-aos-duration="1200"
+                                <div data-aos="fade-up" data-aos-delay="150"
+                                    data-aos-duration="1200"
                                     class="card w-[340px] hover:shadow-lg h-[230px] relative hover:top-[-10px] group transition transition-all  duration-700 ease-in-out hover:bg-sky-500 bg-[#f1f1f1]  p-[30px] mb-16 rounded-md text-center pt-[50px]">
                                     <div
                                         class="bg-blue-600 shadow-2xl w-18 h-18 rounded-[50%] absolute text-center right-[41%] top-[-35px] z-20 group-hover:bg-white"><i
@@ -184,7 +189,8 @@
                                             More</a>
                                     </div>
                                 </div>
-                                <div data-aos="fade-up" data-aos-delay="200" data-aos-one="false" data-aos-mirror="true" data-aos-duration="1200"
+                                <div data-aos="fade-up" data-aos-delay="200"
+                                    data-aos-duration="1200"
                                     class="card w-[340px] hover:shadow-lg h-[230px] relative hover:top-[-10px] group transition transition-all  duration-700 ease-in-out hover:bg-sky-500 bg-[#f1f1f1]  p-[30px] mb-16 rounded-md text-center pt-[50px]">
                                     <div
                                         class="bg-blue-600 shadow-2xl w-18 h-18 rounded-[50%] absolute text-center right-[41%] top-[-35px] z-20 group-hover:bg-white"><i
@@ -204,7 +210,8 @@
                                             More</a>
                                     </div>
                                 </div>
-                                <div data-aos="fade-up" data-aos-delay="250" data-aos-one="false" data-aos-mirror="true" data-aos-duration="1200"
+                                <div data-aos="fade-up" data-aos-delay="250"
+                                    data-aos-duration="1200"
                                     class="card w-[340px] hover:shadow-lg h-[230px] relative hover:top-[-10px] group transition transition-all  duration-700 ease-in-out hover:bg-sky-500 bg-[#f1f1f1]  p-[30px] mb-16 rounded-md text-center pt-[50px]">
                                     <div
                                         class="bg-blue-600 shadow-2xl w-18 h-18 rounded-[50%] absolute text-center right-[41%] top-[-35px] z-20 group-hover:bg-white"><i
@@ -224,7 +231,8 @@
                                             More</a>
                                     </div>
                                 </div>
-                                <div data-aos="fade-up" data-aos-delay="300" data-aos-one="false" data-aos-mirror="true" data-aos-duration="1200"
+                                <div data-aos="fade-up" data-aos-delay="300"
+                                    data-aos-duration="1200"
                                     class="card w-[340px] hover:shadow-lg h-[230px] relative hover:top-[-10px] group transition transition-all  duration-700 ease-in-out hover:bg-sky-500 bg-[#f1f1f1]  p-[30px] mb-16 rounded-md text-center pt-[50px]">
                                     <div
                                         class="bg-blue-600 shadow-2xl w-18 h-18 rounded-[50%] absolute text-center right-[41%] top-[-35px] z-20 group-hover:bg-white"><i
@@ -250,11 +258,12 @@
                     </div>
                 </div>
             </section>
-            <section class="mt-[100px]">
+            <section class="mt-[100px] " id="communicate-sec">
                 <div class="mx-auto max-w-[1320px] w-[80%]">
                     <div
                         class="communicate grid lg:grid-cols-2 md:grid-cols-1 gap-[100px]">
-                        <div class="com-img w-[100%] " data-aos="fade-right" data-aos-one="false" data-aos-mirror="true" data-aos-duration="1200">
+                        <div class="com-img w-[100%] " data-aos="fade-right"
+                            data-aos-duration="1200">
                             <img
                                 src="https://preview.colorlib.com/theme/imagine/images/undraw_gift_card_6ekc.svg"
                                 alt>
@@ -268,7 +277,7 @@
                                 adipisicing elit. Voluptatem neque nisi
                                 architecto autem molestias corrupti officia
                                 veniam.</p>
-                            <div data-aos="fade-left" data-aos-one="false" data-aos-mirror="true" data-aos-duration="1200"
+                            <div data-aos="fade-left" data-aos-duration="1200"
                                 class="author mb-[1.5rem] rounded-[4px] p-[20px] border border-[#eee] border-l-[10px] border-l-[#4285f4] ">
                                 <div
                                     class="text-black flex gap-[20px] mb-[30px]">
@@ -304,7 +313,7 @@
                                 adipisicing elit. Voluptatem neque nisi
                                 architecto autem molestias corrupti officia
                                 veniam.</p>
-                            <div data-aos="fade-right" data-aos-one="false" data-aos-mirror="true" data-aos-duration="1200"
+                            <div data-aos="fade-right" data-aos-duration="1200"
                                 class="author mb-[1.5rem] rounded-[4px] p-[20px] border border-[#eee] border-l-[10px] border-l-[#4285f4] ">
                                 <div
                                     class="text-black flex gap-[20px] mb-[30px]">
@@ -324,7 +333,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="com-img w-[100%] ml-[-90px]" data-aos="fade-left" data-aos-one="false" data-aos-mirror="true" data-aos-duration="1200">
+                        <div class="com-img w-[100%] ml-[-90px]"
+                            data-aos="fade-left" data-aos-duration="1200">
                             <img
                                 src="https://preview.colorlib.com/theme/imagine/images/undraw_metrics_gtu7.svg"
                                 alt>
@@ -336,7 +346,8 @@
                 <div class="mx-auto max-w-[1320px] w-[80%]">
                     <div
                         class="communicate grid lg:grid-cols-2 md:grid-cols-1 gap-[100px]">
-                        <div class="com-img w-[100%]" data-aos="fade-right" data-aos-one="false" data-aos-mirror="true" data-aos-duration="1200">
+                        <div class="com-img w-[100%]" data-aos="fade-right"
+                            data-aos-duration="1200">
                             <img
                                 src="https://preview.colorlib.com/theme/imagine/images/undraw_gift_card_6ekc.svg"
                                 alt>
@@ -350,7 +361,7 @@
                                 adipisicing elit. Voluptatem neque nisi
                                 architecto autem molestias corrupti officia
                                 veniam.</p>
-                            <div data-aos="fade-left" data-aos-one="false" data-aos-mirror="true" data-aos-duration="1200"
+                            <div data-aos="fade-left" data-aos-duration="1200"
                                 class="author mb-[1.5rem] rounded-[4px] p-[20px] border border-[#eee] border-l-[10px] border-l-[#4285f4] ">
                                 <div
                                     class="text-black flex gap-[20px] mb-[30px]">
@@ -386,7 +397,7 @@
                                 adipisicing elit. Voluptatem neque nisi
                                 architecto autem molestias corrupti officia
                                 veniam.</p>
-                            <div data-aos="fade-right" data-aos-one="false" data-aos-mirror="true" data-aos-duration="1200"
+                            <div data-aos="fade-right" data-aos-duration="1200"
                                 class="author mb-[1.5rem] rounded-[4px] p-[20px] border border-[#eee] border-l-[10px] border-l-[#4285f4] ">
                                 <div
                                     class="text-black flex gap-[20px] mb-[30px]">
@@ -406,7 +417,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="com-img w-[100%] ml-[-90px]" data-aos="fade-left" data-aos-one="false" data-aos-mirror="true" data-aos-duration="1200">
+                        <div class="com-img w-[100%] ml-[-90px]"
+                            data-aos="fade-left" data-aos-duration="1200">
                             <img
                                 src="https://preview.colorlib.com/theme/imagine/images/undraw_metrics_gtu7.svg"
                                 alt>
@@ -414,7 +426,7 @@
                     </div>
                 </div>
             </section>
-            <section class="bg-gray-100 mt-[100px]">
+            <section class="bg-gray-100 mt-[100px]" id="about-sec">
                 <div class="mx-auto max-w-[1320px] w-[80%]">
                     <div class="about p-[60px]">
                         <div class="header mb-[50px] text-center">
@@ -424,7 +436,7 @@
                         </div>
                         <div
                             class="body grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-[100px]">
-                            <div data-aos="fade-right" data-aos-one="false" data-aos-mirror="true" data-aos-duration="1200">
+                            <div data-aos="fade-right" data-aos-duration="1200">
                                 <img
                                     src="https://preview.colorlib.com/theme/imagine/images/undraw_bookmarks_r6up.svg"
                                     alt>
@@ -460,7 +472,7 @@
                     </div>
                 </div>
             </section>
-            <section class="mt-[100px]">
+            <section class="mt-[100px]" id="team-sec">
                 <div class="mx-auto max-w-[1320px] w-[80%]">
                     <div class="text-center mb-[40px]">
                         <h2 class="text-black font-bold text-[40px]">Our
@@ -481,6 +493,9 @@
     </body>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-    AOS.init();
+    AOS.init({
+        once: false,
+        mirror: true,
+    });
   </script>
 </html>
