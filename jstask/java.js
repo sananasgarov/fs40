@@ -198,3 +198,52 @@
 //     throw console.error();
 // }
 // console.log("Ayin adi:", months[a - 1]);
+
+
+// task30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// task31
+// p = 8
+// q = 16
+
+
+// task32
+// let a = 6, b = 4, c = 2;
+
+// let x = ++a - b-- + c++ - --b + a++;
+// let y = a-- + --c - ++b + x++ - --a;
+
+// console.log(a, b, c, x, y);
+// a = 6
+// b = 3
+// c = 2
+// x = 11
+// y = 11
+
+// task33
+// let a = 7, b = 3, c = 5;
+
+// let x = a-- - ++b + c++ - --a + b++ - --c + a++ - b-- + c++;
+// let y = --x + a++ - --b + c-- - x++ + ++a - b++ + --c - x--;
+// let z = a-- + ++b - --c + x++ - --y + b-- - ++x + c++ - --a + y++;
+
+// console.log(a, b, c, x, y, z);
+// a = 6
+// b = 4
+// c = 4
+// x = 8
+// y = 11
+// z = 10
