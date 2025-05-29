@@ -10,7 +10,6 @@
 //  `console`
 //  `$add`
 
-
 // task04
 // let bookPrice = 100;
 // let bookAmount = 50;
@@ -60,13 +59,11 @@
 // console.log("Sizin normal Adiniz:",a + b);
 // console.log("Tersine Cevrilmis:",b + a)
 
-
 // task12
 // let FullName = "Sanan Asgarov"
 // let a = FullName.split(" ");
 // let b = a[1] + a [0];
 // console.log(b);
-
 
 // task13
 // let a = prompt("Adinizi Qeyd edin","");
@@ -87,7 +84,6 @@
 // let c = b[5];
 // console.log(c);
 
-
 // task17
 // let a = prompt("4 reqemli eded daxil edin",1000);
 // let b = String(a);
@@ -107,7 +103,6 @@
 // let b = price.slice(0,a);
 // let c = price.slice(a + 1,last + 1);
 // console.log(b,"manat" + " " + c,"qepik");
-
 
 // task20
 // let a = prompt("Emek haqqi",1000);
@@ -136,8 +131,6 @@
 // console.log(value > 20);
 // console.log(value < 20);
 // console.log(value === 20);
-
-
 
 // task24
 // let age = prompt("yasiniz",18);
@@ -175,6 +168,25 @@
 //     alert("kisa il");
 // }
 
+// task27
+// let id = prompt("enter product id");
+// switch (+id) {
+// 	case 1:
+//     	alert("Available 10 pcs");
+// 		break;
+// 	case 2:
+//     	alert("Available 256 pcs");
+// 		break;
+//   	case 3:
+//    		alert("Available 53 pcs");
+// 		break;
+//     case 4:
+//         alert("gurt: yo");
+// 		break;
+// 	default:
+// 		alert("default")
+// }
+
 // task28
 // let a = prompt("M or F");
 // if (a.toUpperCase() == "M"){
@@ -184,6 +196,57 @@
 // }
 // console.log(g);
 
+// task28
+// let a = prompt("M or F");
+// a === "M" ? console.log("Male") : a === "F" : console.log("Female") : console.log("error");
+
+// task29
+// let a = prompt("Ayin nomresi",1);
+// const months = [
+//   "Yanvar", "Fevral", "Mart", "Aprel", "May", "İyun",
+//   "İyul", "Avqust", "Sentyabr", "Oktyabr", "Noyabr", "Dekabr"
+// ];
+// switch(+a){
+// 	case 1:
+// 		console.log(months[0]);
+// 		break
+// 	case 2:
+// 		console.log(months[1]);
+// 		break
+// 	case 3:
+// 		console.log(months[2]);
+// 		break
+// 	case 4:
+// 		console.log(months[3]);
+// 		break
+// 	case 5:
+// 		console.log(months[4]);
+// 		break
+// 	case 6:
+// 		console.log(months[5]);
+// 		break
+// 	case 7:
+// 		console.log(months[6]);
+// 		break
+// 	case 8:
+// 		console.log(months[7]);
+// 		break
+// 	case 9:
+// 		console.log(months[8]);
+// 		break
+// 	case 10:
+// 		console.log(months[9]);
+// 		break
+// 	case 11:
+// 		console.log(months[10]);
+// 		break
+// 	case 12:
+// 		console.log(months[11]);
+// 		break
+// 	default:
+// 		console.log("Duzgun deyer daxil edin");
+
+// }
 
 // task29
 // let a = prompt("Ayin nomresi",1);
@@ -199,26 +262,61 @@
 // }
 // console.log("Ayin adi:", months[a - 1]);
 
-
 // task30
-
-
-
-
-
-
-
-
-
-
-
-
-
+// let date = prompt("il ay gun daxil edin","2009.12.19");
+// let a = date.split(".");
+// let year = a[0];
+// let month = a[1];
+// let day = a[2];
+// const months = [
+//   "Yanvar", "Fevral", "Mart", "Aprel", "May", "İyun",
+//   "İyul", "Avqust", "Sentyabr", "Oktyabr", "Noyabr", "Dekabr"
+// ];
+// switch(+month){
+// 	case 1:
+// 		m = months[0];
+// 		break
+// 	case 2:
+// 		m = months[1];
+// 		break
+// 	case 3:
+// 		m = months[2];
+// 		break
+// 	case 4:
+// 		m = months[3];
+// 		break
+// 	case 5:
+// 		m = months[4];
+// 		break
+// 	case 6:
+// 		m = months[5];
+// 		break
+// 	case 7:
+// 		m = months[6];
+// 		break
+// 	case 8:
+// 		m = months[7];
+// 		break
+// 	case 9:
+// 		m = months[8];
+// 		break
+// 	case 10:
+// 		m = months[9];
+// 		break
+// 	case 11:
+// 		m = months[10];
+// 		break
+// 	case 12:
+// 		m = months[11];
+// 		break
+// 	default:
+// 		console.log("Duzgun deyer daxil edin");
+// }
+// console.log(`${day} ${m} ${year}-cu il`);
 
 // task31
 // p = 8
 // q = 16
-
 
 // task32
 // let a = 6, b = 4, c = 2;
@@ -247,3 +345,90 @@
 // x = 8
 // y = 11
 // z = 10
+
+// let a = 15;
+// let b = 14;
+// console.log(a === b);
+
+// task 34
+// let a = prompt("Ədədi daxil edin:",1);
+// a > 0 ? console.log("Müsbetdir") : a < 0 ? console.log("Menfidir") : console.log("sifirdir");
+
+// task 35
+// let a = prompt();
+// let b = prompt();
+// let c = prompt();
+// if (a > b && a > c) {
+//     console.log(`En boyuk eded ${a}`);
+// }else if (b > a && b > c) {
+//     console.log(`En boyuk eded ${b}`);
+// }else {
+//     console.log(`En boyuk eded ${c}`);
+
+// }
+
+// task36
+// let number = prompt("Ədədi daxil edin:");
+// number = +number;
+// if (number === 1) {
+//   console.log("Ne cutdur nede tek");
+// } else {
+//   let result = number % 2 === 0 ? "Cüt" : "Tək";
+//   console.log(result);
+// }
+
+// task37
+// let a = prompt("Terefi daxil edin:");
+// let sahe = a**2;
+// let perimetr = 4+a;
+// console.log(`Sahe: ${sahe} Perimetr: ${perimetr}`);
+
+// task 38
+// let a = prompt("Qiymeti daxil edin");
+// switch (true) {
+//   case a >= 90 && a <= 100:
+//     console.log("Ela");
+//     break;
+//   case a >= 75 && a <= 89:
+//     console.log("Yaxşı");
+//     break;
+//   case a >= 60 && a <= 74:
+//     console.log("Orta");
+//     break;
+//   case a >= 0 && a <= 59:
+//     console.log("Zəif");
+//     break;
+//   default:
+//     console.log("Yanlış qiymət daxil edilib");
+// }
+
+// task39
+// let a = Math.floor(Math.random() * 101);
+// console.log(a);
+// if (a >= 0 && a <= 50) {
+//   console.log("Bu ədəd 0 ilə 50 arasinda");
+// } else {
+//   console.log("Bu ədəd 50-dən böyükdür.");
+// }
+
+// task 40
+// let a = prompt("birinci eded");
+// let b = prompt("ikinci eded");
+// let operator = prompt("* / - +");
+// switch (operator) {
+//   case "*":
+//     console.log(a * b);
+//     break;
+//   case "/":
+//     console.log(a / b);
+//     break;
+//   case "-":
+//     console.log(a - b);
+//     break;
+//   case "+":
+//     console.log(a + b);
+//     break;
+//   default:
+//     console.log("Sehv operator daxil edilib");
+//     break;
+// }
