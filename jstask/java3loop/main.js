@@ -68,7 +68,6 @@
 //   console.log("1 ne m nede s");
 // }
 
-
 // task07
 // let b = 1;
 // for(let a = 10;a > 0;a--){
@@ -95,7 +94,6 @@
 //   }
 // }
 
-
 // task10
 // let text = prompt("Metin daxil edin");
 // let a = 0;
@@ -108,4 +106,20 @@
 //   console.log(`${a} sayda eded var`);
 // }else{
 //   console.log("Eded yoxdu");
+// }
+
+// fibanocci
+// 1 1 2 3 5 8 13
+// let n = prompt("");
+// n = Number(n);
+
+// let a = 0, b = 1;
+
+// console.log("Fibonacci ədədləri:");
+
+// for (let i = 0; i < n; i++) {
+//   console.log(a);
+//   let c = a + b;
+//   a = b;
+//   b = c;
 // }
