@@ -112,9 +112,7 @@
 // 1 1 2 3 5 8 13
 // let n = prompt("");
 // n = Number(n);
-
 // let a = 0, b = 1;
-
 // console.log("Fibonacci ədədləri:");
 
 // for (let i = 0; i < n; i++) {
@@ -122,4 +120,17 @@
 //   let c = a + b;
 //   a = b;
 //   b = c;
+// }
+
+
+// for(let n = 75;n > 1;n--){
+//     let cnt = 0;
+//     for(let j = n;j > 0;j--){
+//         if (!(n % j)) {
+//             cnt++;
+//         }
+//     }
+//     if (cnt == 2) {
+//         console.log(n);
+//     }
 // }
