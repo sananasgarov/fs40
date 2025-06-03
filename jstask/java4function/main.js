@@ -308,33 +308,25 @@
 // daysBetweenDates(d1,d2)
 
 // task17
-// function mostFrequent(Count) {
-//   let a = Count.split(",");
-//   c = 0;
-//   d = 0;
-//   for (let b = 0; b < a.length; b++) {
-//     let c = b + 1;
-//     while (c < a.length) {
-//       if (a[b].length == a[c].length) {
-//         d = d + 1
-//       }
-//       c++;
-//     }
-//   }
-// }
-// count = prompt("Ededler daxil edin");
-// mostFrequent(count);
-
+function mostFrequent(Count) {
+  let a = Count.split(",");
+  c = a.length;
+  d = 0;
+  for (let b = 0; b < a.length; b++) {
+    if (a[b] ) {
+        
+    }
+  }
 
 // task18
-function reverseArray(numbers) {
-    a = numbers.split(",")
-    d = ""
-    for(let c = a.length - 1;c > 0;c--){
-        d += + a[c] + ","
-    }
-    console.log(d);
+// function reverseArray(numbers) {
+//     a = numbers.split(",")
+//     d = ""
+//     for(let c = a.length - 1;c > -1;c--){
+//         d += + a[c] + ","
+//     }
+//     console.log(d);
     
-}
-num = prompt("daxil edin","3,2,1")
-reverseArray(num)
+// }
+// num = prompt("daxil edin","3,2,1")
+// reverseArray(num)
