@@ -308,15 +308,15 @@
 // daysBetweenDates(d1,d2)
 
 // task17
-function mostFrequent(Count) {
-  let a = Count.split(",");
-  c = a.length;
-  d = 0;
-  for (let b = 0; b < a.length; b++) {
-    if (a[b] ) {
+// function mostFrequent(Count) {
+//   let a = Count.split(",");
+//   c = a.length;
+//   d = 0;
+//   for (let b = 0; b < a.length; b++) {
+//     if (a[b] ) {
         
-    }
-  }
+//     }
+//   }
 
 // task18
 // function reverseArray(numbers) {
@@ -330,3 +330,11 @@ function mostFrequent(Count) {
 // }
 // num = prompt("daxil edin","3,2,1")
 // reverseArray(num)
+
+// task19
+// function userInfo(name,age) {
+//     return `${name} is ${age} years old`
+// }
+// name = prompt("Ad daxil edin")
+// age = prompt("Yas daxil edin")
+// console.log(userInfo(name,age));
