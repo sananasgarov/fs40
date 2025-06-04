@@ -307,17 +307,6 @@
 // d2 = prompt("tarix daxil edin")
 // daysBetweenDates(d1,d2)
 
-// task17
-// function mostFrequent(Count) {
-//   let a = Count.split(",");
-//   c = a.length;
-//   d = 0;
-//   for (let b = 0; b < a.length; b++) {
-//     if (a[b] ) {
-        
-//     }
-//   }
-
 // task18
 // function reverseArray(numbers) {
 //     a = numbers.split(",")
@@ -326,7 +315,7 @@
 //         d += + a[c] + ","
 //     }
 //     console.log(d);
-    
+
 // }
 // num = prompt("daxil edin","3,2,1")
 // reverseArray(num)
@@ -338,3 +327,29 @@
 // name = prompt("Ad daxil edin")
 // age = prompt("Yas daxil edin")
 // console.log(userInfo(name,age));
+
+// task20
+// function charCodes(text) {
+//     a = text.split("")
+//     d = ""
+//     for(let b = 0;b < a.length;b++){
+//         d += a[b].charCodeAt() + ","
+//     }
+//     console.log(d);
+
+// }
+// t = prompt("Metn daxil edin")
+// charCodes(t)
+
+// task21
+// function factorial(num) {
+//     let b = 1;
+//     num = +num
+//     for(let a = 1;a < num + 1;a++){
+//         b = b * a
+//     }
+//     console.log(b);
+
+// }
+// number = prompt("Eded daxil edin")
+// factorial(number)
