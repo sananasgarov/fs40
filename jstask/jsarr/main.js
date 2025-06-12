@@ -122,6 +122,14 @@
 // a.shift()
 // console.log(a);
 
+// task7
+// let [first, sec, ...others] = [11,12,13,14,15,16,17,181,9,19]
+// console.log(first);
+// console.log(sec); 
+// console.log(others);
+
+
+
 // task08
 // let a = [11,12,13,14,15,16,17,181,9,19]
 // let b = Math.max(...a)
@@ -230,6 +238,12 @@
 //     console.log(`${index} - ${element}`);
 // });
 
+// task16
+// function kebabToUpper(element) {
+//     return element.replace(/-/g, "_").toUpperCase();
+// }
+// console.log(kebabToUpper("first-user"));
+
 // task17;
 // let numbers = [1, 5, -7, 3, -9, 4, -6, 2];
 // let a = []
@@ -245,6 +259,14 @@
 // }
 // console.log(a);
 
+// task18
+// let names = ["Aichael", "Arevor", "Franklin", "Lamar", "Jimmy"];
+// let newName = []
+// names.forEach(back)
+// function back(element) {
+//     newName.push(element.slice(0,3))
+// }
+// console.log(newName);
 
 // task19
 // let names = ["Aichael", "Arevor", "Franklin", "Lamar", "Jimmy"];
@@ -256,7 +278,6 @@
 //     }
 // }
 // console.log(newName);
-
 
 // task20
 // let price = [200,100,200,300,400,400]
