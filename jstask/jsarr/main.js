@@ -125,10 +125,8 @@
 // task7
 // let [first, sec, ...others] = [11,12,13,14,15,16,17,181,9,19]
 // console.log(first);
-// console.log(sec); 
+// console.log(sec);
 // console.log(others);
-
-
 
 // task08
 // let a = [11,12,13,14,15,16,17,181,9,19]
@@ -302,3 +300,47 @@
 //     }
 // }
 // console.log(`Massivde ${even} cut ve ${odd} tek eded var`);
+
+// task17;
+// let numbers = [1, 5, -7, 3, -9, 4, -6, 2];
+// let a = numbers.map((num) => {
+//   if (num < 0) {
+//     return Math.abs(num);
+//   } else {
+//     return num * 2;
+//   }
+// });
+// console.log(a);
+
+// task18
+// function Three(arr) {
+//     return arr.map(str => str.slice(0, 3));
+// }
+// let words = ["Sanan", "Nicat", "Toghrul"];
+// console.log(Three(words));
+
+// task19
+// let words = ["Sanan", "Nicat", "Aydan","Aysel"];
+// let a = words.filter(item => item[0] == "A")
+// console.log(a);
+
+// task20
+// let prices = [100, 250, 75, 40];
+// function addTax(price) {
+//     return prices.map(item => item * 1.2)
+
+// }
+// let p = addTax(prices)
+// console.log(p);
+
+// task21;
+// function countEvensAndOdds(numbers) {
+//   let evenCount = numbers.filter((num) => num % 2 === 0).length;
+//   let oddCount = numbers.filter((num) => num % 2 !== 0).length;
+
+//   return `Massivdə ${evenCount} cüt və ${oddCount} tək ədəd var.`;
+// }
+
+// // Nümunə test
+// let prices = [100, 250, 75, 40];
+// console.log(countEvensAndOdds(prices));
