@@ -103,14 +103,25 @@ function render(dataarr) {
                         </tr>
   `;
   dataarr.forEach((item) => {
-    t.innerHTML += `
+    if (parseFloat(item.change) < 0) {
+      t.innerHTML += `
       <tr>
         <td>${item.name}</td>
         <td>${item.ticker}</td>
         <td>${item.value}</td>
-        <td>${item.change}</td>
+        <td style="color: red;":>${item.change}</td>
       </tr>
     `;
+    } else {
+      t.innerHTML += `
+      <tr>
+        <td>${item.name}</td>
+        <td>${item.ticker}</td>
+        <td >${item.value}</td>
+        <td style="color: green;":>${item.change}</td>
+      </tr>
+    `;
+    }
   });
 }
 render(data);
@@ -123,18 +134,20 @@ function Ticker_filter() {
   render(data);
 }
 function Value_filter() {
-  data.sort((a,b) => a.value - b.value);
-  render(data)
+  data.sort((a, b) => a.value - b.value);
+  render(data);
 }
 function Change_filter() {
   data.sort((a, b) => parseFloat(a.change) - parseFloat(b.change));
   render(data);
 }
-const input = document.querySelector("#input")
+const input = document.querySelector("#input");
 input.addEventListener("input", () => {
   const value = input.value.toLowerCase();
-  const filtered = data.filter((item) =>
-    item.name.toLowerCase().includes(value)
+  const filtered = data.filter(
+    (item) =>
+      item.name.toLowerCase().includes(value) ||
+      item.ticker.toLowerCase().includes(value)
   );
   render(filtered);
 });
