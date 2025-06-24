@@ -91,13 +91,50 @@ const data = [
   },
 ];
 const t = document.querySelector("#table");
-data.forEach((item) => {
+function render(dataarr) {
+  t.innerHTML = "";
   t.innerHTML += `
-                <tr>
-                    <td>${item.name}</td>
-                    <td>${item.ticker}</td>
-                    <td>${item.value}</td>
-                    <td>${item.change}</td>
-                </tr>
+  <tr>
+                            <th><button
+                                    onclick="Name_filter()">Name</button></th>
+                            <th><button  onclick="Ticker_filter()">ticker</button></th>
+                            <th><button onclick="Value_filter()">value</button></th>
+                            <th><button onclick="Change_filter()">change</button></th>
+                        </tr>
+  `;
+  dataarr.forEach((item) => {
+    t.innerHTML += `
+      <tr>
+        <td>${item.name}</td>
+        <td>${item.ticker}</td>
+        <td>${item.value}</td>
+        <td>${item.change}</td>
+      </tr>
     `;
+  });
+}
+render(data);
+function Name_filter() {
+  data.sort((a, b) => a.name.localeCompare(b.name));
+  render(data);
+}
+function Ticker_filter() {
+  data.sort((a, b) => a.ticker.localeCompare(b.ticker));
+  render(data);
+}
+function Value_filter() {
+  data.sort((a,b) => a.value - b.value);
+  render(data)
+}
+function Change_filter() {
+  data.sort((a, b) => parseFloat(a.change) - parseFloat(b.change));
+  render(data);
+}
+const input = document.querySelector("#input")
+input.addEventListener("input", () => {
+  const value = input.value.toLowerCase();
+  const filtered = data.filter((item) =>
+    item.name.toLowerCase().includes(value)
+  );
+  render(filtered);
 });
