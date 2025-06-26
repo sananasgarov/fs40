@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        <script
+            src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    </head>
+    <body>
+        <header class="mb-[60px]">
+            <button class="hover:cursor-pointer " id="ShowCard"><div
+                    class="shadow-md text-[24px] rounded-sm w-[60px] h-[60px] fixed z-50 right-10 top-[50%] flex justify-center items-center"><i
+                        class="fa-solid fa-cart-shopping"></i></div></button>
+            <contanier class="max-w-[1320px] w-[80%] mx-auto">
+                <nav
+                    class="shadow-md grid grid-cols-3 justify-around px-[7rem] py-[10px] items-center">
+                    <img
+                        src="https://doughmaster.netlify.app/static/media/logo.3f417c685919869e7ba2.png"
+                        alt class="w-[60px] object-cover">
+                    <button class="hover:cursor-pointer w-[60px]">Card</button>
+                    <input type="text" id="search"
+                        placeholder="Search Pizza..."
+                        class="shadow-md !p-[7px] border-none focus:outline-none w-[300px]">
+                </nav>
+            </contanier>
+        </header>
+        <main>
+            <section>
+                <contanier class="max-w-[1320px] w-[80%] mx-auto">
+                    <div class="mx-auto max-w-[80%]">
+                        <h2
+                            class="text-black font-bold text-[20px]">Total
+                            data:<span id="StoragePizza"></span>ədəd pizza</h2>
+                        <div
+                            class="grid grid-cols-4 gap-[30px]"
+                            id="PizzaCards">
+                        </div>
+                    </div>
+                </contanier>
+            </section>
+            <section>
+                <container class="max-w-[1320px] w-[80%] mx-auto">
+                    <div id="overlay"
+                        class=" hidden after:fixed after:inset-0 after:content-[''] after:opacity-[0.7] after:bg-black after:z-[1]"></div>
+                    <div
+                        class="fixed z-60 p-[20px] top-0 bg-white w-[400px] h-[100%] hidden"
+                        id="Card">
+                        <p class="text-black font-bold text-[28px]">Quick
+                            Card</p>
+                        <div id="QuickCard">
+                        </div>
+                        <p class="text-[20px] font-bold hidden" id="TotalPrice">Total price : <span class="Total"></span> AZN</p>
+                        <p class="text-black font-bold text-[28px]"
+                            id="Empty">Card is
+                            Empty</p>
+                        <button
+                            class="rounded-sm bg-purple-500 text-white p-[10px] hover:cursor-pointer hidden"
+                            id="BuyButton">Buy</button>
+                    </div>
+                </container>
+            </section>
+        </main>
+        <footer>
+            <section class="p-[60px]">
+                <contanier class="max-w-[1320px] w-[80%] mx-auto">
+                    <div
+                        class="text-center flex gap-[40px] justify-center items-center">
+                        <button class="focus:cursor-pointer" id="button1"><div
+                                class="bg-blue-700 w-[60px] h-[40px] flex items-center justify-center"><p
+                                    class="text-white">1</p></div></button>
+                        <button class="focus:cursor-pointer" id="button2"><div
+                                class="bg-blue-700 w-[60px] h-[40px] flex items-center justify-center"><p
+                                    class="text-white">2</p></div></button>
+                        <button class="focus:cursor-pointer" id="button3"><div
+                                class="bg-blue-700 w-[60px] h-[40px] flex items-center justify-center"><p
+                                    class="text-white">3</p></div></button>
+                        <button class="focus:cursor-pointer" id="button4"><div
+                                class="bg-blue-700 w-[60px] h-[40px] flex items-center justify-center"><p
+                                    class="text-white">4</p></div></button>
+                        <button class="focus:cursor-pointer" id="button5"><div
+                                class="bg-blue-700 w-[60px] h-[40px] flex items-center justify-center"><p
+                                    class="text-white">5</p></div></button>
+                    </div>
+                </contanier>
+            </section>
+        </footer>
+        <script src="./main.js" type="module"></script>
+    </body>
+
+</html>
