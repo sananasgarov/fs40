@@ -74,24 +74,44 @@ function updateQuickCard() {
     const item = cart[id];
     total += item.price * item.count;
     quickcard.innerHTML += `
-      <div class="grid grid-cols-3 justify-between items-center gap-2 mb-4">
-        <img src="${
-          item.img
-        }" class="w-[50px] h-[50px] object-cover rounded" onerror="this.src='https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png'">
+      <div class="grid grid-cols-3 justify-between items-center gap-2 mb-4" data-id="${id}">
+        <img src="${item.img}" class="w-[50px] h-[50px] object-cover rounded" 
+        onerror="this.src='https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png'">
         <div>
           <p class="font-bold">${item.name}</p>
-          <p class="text-sm">${item.price * item.count}</p>
+          <p class="text-sm">${item.price * item.count} AZN</p>
         </div>
         <div class="flex items-center gap-1">
-          <button class="bg-blue-600 text-white px-2">-</button>
+          <button class="bg-blue-600 text-white px-2 subs">-</button>
           <span>${item.count}</span>
-          <button class="bg-blue-600 text-white px-2">+</button>
+          <button class="bg-blue-600 text-white px-2 plus">+</button>
         </div>
       </div>
     `;
   });
   Price.innerText = `${total} AZN`;
 }
+quickcard.addEventListener("click", (e) => {
+  const parent = e.target.closest("div[data-id]");
+  if (!parent) return;
+  const id = parent.dataset.id;
+  if (e.target.classList.contains("plus")) {
+    cart[id].count += 1;
+    updateQuickCard();
+  }
+  if (e.target.classList.contains("subs")) {
+    cart[id].count -= 1;
+    if (cart[id].count <= 0) {
+      delete cart[id];
+    }
+    updateQuickCard();
+  }
+  if (Object.keys(cart).length === 0) {
+    empty.classList.remove("hidden");
+    buybutton.classList.add("hidden");
+    TPrice.classList.add("hidden");
+  }
+});
 search.addEventListener("input", () => {
   const val = search.value.toLowerCase();
   const filtered = data.filter((item) => item.name.toLowerCase().includes(val));
