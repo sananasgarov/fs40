@@ -1,5 +1,5 @@
 let url = "https://pixabay.com/api/?key=24090419-925e057925ba4cc124682bb5f&q=";
-const search = document.querySelector("#search")
+const search = document.querySelector("#search");
 let a = "Nature";
 async function fetchdata(query) {
   const response = await fetch(`${url}${query}`);
@@ -23,7 +23,7 @@ async function renderdata() {
                         </p>
                         <button>
                             <a
-                                href="${item.largeImageURL}">
+                                href="${item.largeImageURL}" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor"
@@ -40,9 +40,9 @@ async function renderdata() {
   });
 }
 renderdata();
-search.addEventListener("keyup",(e)=>{
-    a = search.value
-    if (e.key == "Enter") {
-        renderdata()
-    }
-})
+search.addEventListener("keyup", (e) => {
+  a = search.value;
+  if (e.key == "Enter") {
+    renderdata();
+  }
+});
