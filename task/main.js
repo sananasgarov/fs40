@@ -1,8 +1,8 @@
-const arr = [
-  [10, 20, 35, 15, 5],
-  [4, 5, 20, 10, 40],
-  [5, 6, 10],
-];
+// const arr = [
+//   [10, 20, 35, 15, 5],
+//   [4, 5, 20, 10, 40],
+//   [5, 6, 10],
+// ];
 // let same = [];
 // let common = [];
 // arr.forEach((item) => {
@@ -23,5 +23,16 @@ const arr = [
 // }
 // common = common.filter((value, index, self) => self.indexOf(value) === index);
 // console.log(common);
-
-
+/**
+/**
+ * @param {string[]} strs
+ * @return {string}
+ */
+var longestCommonPrefix = function (strs) {
+  if (1 <= strs.length <= 200) {
+    for (let i = 0; i < strs.length; i++) {
+      strs
+    }
+  }
+};
+longestCommonPrefix(["flower","flow","flight"])
